@@ -1,45 +1,64 @@
-# ===== Task 1: Store your age and print it =====
-age = 20
-print("My age is:", age)
+# ===== Task 1: Largest of Two Numbers =====
+num1 = 12
+num2 = 25
+
+if num1 > num2:
+    print("Largest of two numbers:", num1)
+else:
+    print("Largest of two numbers:", num2)
 
 print()
 
-# ===== Task 2: Convert "250" into an integer =====
-value = "250"
-converted_value = int(value)
-print("Converted to integer:", converted_value)
-print(type(converted_value))
+# ===== Task 2: Largest of Three Numbers =====
+a = 10
+b = 45
+c = 23
+
+if a >= b and a >= c:
+    largest = a
+elif b >= a and b >= c:
+    largest = b
+else:
+    largest = c
+
+print("Largest of three numbers:", largest)
 
 print()
 
-# ===== Task 3: Convert 75 into a float =====
-value = 75
-converted_value = float(value)
-print("Converted to float:", converted_value)
-print(type(converted_value))
+# ===== Task 3: Even or Odd =====
+number = 17
+
+if number % 2 == 0:
+    print(number, "is Even")
+else:
+    print(number, "is Odd")
 
 print()
 
-# ===== Task 4: Create five variables and print their data types =====
-name = "Rithuu"
-age = 20
-height = 5.6
-is_student = True
-marks = [85, 90, 78]
+# ===== Task 4: Leap Year Checker =====
+year = 2024
 
-print(type(name))
-print(type(age))
-print(type(height))
-print(type(is_student))
-print(type(marks))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a Leap Year")
+else:
+    print(year, "is Not a Leap Year")
 
 print()
 
-# ===== Task 5: Take your name, age and city as input and print them =====
-name = input("Enter your name: ")
-age = input("Enter your age: ")
-city = input("Enter your city: ")
+# ===== Task 5: Grade Calculator =====
+marks = 85
 
-print("Name:", name)
-print("Age:", age)
-print("City:", city)
+if marks >= 90:
+    grade = "A+"
+elif marks >= 80:
+    grade = "A"
+elif marks >= 70:
+    grade = "B"
+elif marks >= 60:
+    grade = "C"
+elif marks >= 40:
+    grade = "D"
+else:
+    grade = "F"
+
+print("Grade:", grade)
