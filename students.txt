@@ -1,0 +1,3 @@
+Name: Rithuu, Marks: 92
+Name: Mahendra, Marks: 88
+Name: Priya, Marks: 95
